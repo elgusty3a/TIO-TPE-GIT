@@ -26,4 +26,22 @@ class moviesModel
         return $movies;
     }
 
+    public function getParam($param)
+    {
+        $this->errorHandler($param);
+        // obtiene el genero enviado por GET 
+        $action = $_GET[$param];
+        return $action;
+    }
+
+    public function errorHandler($param)
+    {
+        // verifica datos obligatorios
+        if (!isset($_GET[$param]) || empty($_GET[$param])) {
+            echo "<h2>Error! $param no especificado.</h2>";
+            die();
+        }
+    }
+}
+
 ?>
