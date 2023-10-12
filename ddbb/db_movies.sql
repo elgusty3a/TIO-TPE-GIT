@@ -32,7 +32,7 @@ USE `db_movies`;
 CREATE TABLE `movies` (
   `id` int(11) NOT NULL,
   `title` varchar(35) DEFAULT NULL,
-  `genre` varchar(9) DEFAULT NULL,
+  `genre` varchar(10) DEFAULT NULL,
   `studio` varchar(21) DEFAULT NULL,
   `audience_score` int(2) DEFAULT NULL,
   `year` int(4) DEFAULT NULL
