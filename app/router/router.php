@@ -16,5 +16,10 @@ else if (isset($_GET['genre'])&&!empty(isset($_GET['genre']))) {
 } 
 // Linea 14 y 15, misma funcionalidad que linea 8 Y 9, pero con diferente parametro : 'genre'.
 
+else {
+    $MoviesController->showIndex();
+}
+
+// Linea 20: se llama al metodo showIndex de la instancia moviesController, para llevarnos a la pagina de inicio 
 
 ?>
