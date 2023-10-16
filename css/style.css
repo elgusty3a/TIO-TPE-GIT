@@ -1,0 +1,9 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+ul li a{
+  text-decoration: none;
+  color: rgb(165, 144, 25);
+}

@@ -1,6 +1,6 @@
 <?php
 
-require_once('movies_controller.php');
+require_once('app/controllers/movies_controller.php');
 $MoviesController = new moviesController;
 
 if (isset($_GET['studio'])&&!empty(isset($_GET['studio']))) {
