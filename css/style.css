@@ -1,6 +1,12 @@
 body{
   margin: 0;
   padding: 0;
+  background-color: rgb(44, 38, 38);
+}
+
+h1{
+  color:beige;
+  margin-left: 10px;
 }
 
 ul li a{
