@@ -6,7 +6,11 @@ body{
 
 h1{
   color:beige;
-  margin-left: 10px;
+  margin-left: 30px;
+}
+
+ul{
+  margin-left: 50px;
 }
 
 ul li a{
