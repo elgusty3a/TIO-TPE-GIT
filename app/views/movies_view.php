@@ -28,6 +28,30 @@ class moviesView
         echo "  </tbody>    
             </table>";
     }
+    public function showSearch($movies)
+    {
+        // echo "<h1>Lista por género: $param</h2>";
+        echo "<a href='router.php'> Volver </a>";
+        // imprime la tabla de peliculas
+        echo "<table>
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Año</th>
+                        <th>Estudio</th>
+                    </tr>
+                <thead>
+                <tbody>";
+        foreach ($movies as $movie) {
+            echo "  <tr>
+                        <td>$movie->title</td>
+                        <td>$movie->year</td>
+                        <td>$movie->studio</td>
+                    </tr>";
+        }
+        echo "  </tbody>    
+            </table>";
+    }
 
     public function showIndex()
     {
@@ -40,6 +64,17 @@ class moviesView
     <title>Movies</title>
 </head>
 <body>
+
+<h1>Buscar Peliculas</h1>
+<section>
+    <form action="router.php?search" method="GET">
+    <label for="Nombre">Nombre: </label>
+    <input type="text" name="nombre" id="nombre" /><br />
+    
+    <input type="submit" name="search"id="search" value="Buscar"/><br />
+    </form>
+
+</section>
 
     <h1>Peliculas por género</h1>
     
@@ -62,9 +97,30 @@ class moviesView
         <li><a href="router.php?studio=Fox">Fox</a></li>
     </ul>
 
+
 </body>
 </html>';
     }
+
+    public function errorSearch()
+    {
+        echo '<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="css/style.css" rel="stylesheet">
+            <title>Movies</title>
+        </head>
+        <body>';
+        echo '<h1 class="errorSearch">No se encontró conincidencias para ese título</h1><br>';
+        echo "<a href='router.php'> Volver </a>";
+        echo'
+        </body>
+        </html>';
+    }
+
+
 }
 
 ?>

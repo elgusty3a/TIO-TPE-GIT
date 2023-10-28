@@ -25,6 +25,14 @@ class moviesModel
         $movies = $query->fetchAll(PDO::FETCH_OBJ);
         return $movies;
     }
+    public function showSearchMovies($search)
+    {
+        $db = $this->pdo;
+        $query = $db->prepare('SELECT * FROM movies WHERE studio = ?');
+        $query->execute([$search]);
+        $movies = $query->fetchAll(PDO::FETCH_OBJ);
+        return $movies;
+    }
 
     public function getParam($param)
     {
@@ -32,6 +40,16 @@ class moviesModel
         // obtiene el genero enviado por GET 
         $action = $_GET[$param];
         return $action;
+    }
+    public function getSearch()
+    {
+        // obtiene el genero enviado por GET 
+        $nombre = $_GET['nombre'];
+        $db = $this->pdo;
+        $query = $db->prepare("SELECT * FROM movies WHERE title LIKE '%$nombre%'");
+        $query->execute();
+        $movies = $query->fetchAll(PDO::FETCH_OBJ);
+        return $movies;
     }
 
     public function errorHandler($param)
