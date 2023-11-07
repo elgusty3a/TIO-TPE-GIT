@@ -23,6 +23,10 @@ h1.errorSearch{
   background: rgb(192, 18, 18);
 }
 
+form label{
+  color: goldenrod;
+}
+
 form{
   margin-left: 30px;
 }
