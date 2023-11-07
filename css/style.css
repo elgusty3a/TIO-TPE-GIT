@@ -24,7 +24,9 @@ h1.errorSearch{
 }
 
 form label{
-  color: goldenrod;
+  color: rgb(112, 144, 233);
+  font-weight: bold;
+  padding-right: 5px;
 }
 
 form{
