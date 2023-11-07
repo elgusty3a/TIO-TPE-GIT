@@ -27,8 +27,8 @@ class moviesController
     public function showSearchMovies(){
         $search=$this->model->getSearch();
         if (!empty($search)) {
-        // $movies=$this->model->getMoviesByStudio($search);
-        $this->view->showSearch($search);
+        $movies=$this->model->getMoviesByStudio($search);
+        $this->view->showSearch($movies);
         }else{
         $this->view->errorSearch();
         }
