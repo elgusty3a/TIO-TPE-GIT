@@ -22,13 +22,22 @@ h1.errorSearch{
   color: beige;
   background: rgb(192, 18, 18);
 }
+.contenedor{
+  text-align: center;
+  justify-content: center;
+}
 
 form label{
   color: rgb(112, 144, 233);
   font-weight: bold;
-  padding-right: 5px;
+  padding-bottom: 5px;
 }
-
+.btn{
+  border: solid 3px green;
+  border-radius: 5px;
+  color: green;
+  background-color: lightblue;
+}
 form{
   margin-left: 30px;
 }

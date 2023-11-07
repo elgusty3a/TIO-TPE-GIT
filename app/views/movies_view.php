@@ -64,17 +64,18 @@ class moviesView
     <title>Movies</title>
 </head>
 <body>
-
+<div class="contenedor">
 <h1>Buscar Peliculas</h1>
 <section>
     <form action="router.php?search" method="GET">
-    <label for="Nombre">Nombre: </label>
+    <label for="Nombre">Nombre </label><br>
     <input type="text" name="nombre" id="nombre" /><br />
     
-    <input type="submit" name="search"id="search" value="Buscar"/><br />
+    <input class="btn" type="submit" name="search"id="search" value="Buscar"/><br />
     </form>
 
 </section>
+</div>
 
     <h1>Peliculas por género</h1>
     
