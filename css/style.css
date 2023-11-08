@@ -44,3 +44,9 @@ form{
 input{
   margin-bottom: 5px;
 }
+
+.tablita{
+  border:2px solid gray;
+  border-radius:15px;
+  color:brown;
+}
