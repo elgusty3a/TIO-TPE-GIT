@@ -3,10 +3,10 @@ class moviesView
 {
     public function showMovies($movies, $param)
     {
-        echo "<h1>Lista por género: $param</h2>";
+        echo "<h1>Lista por género: $param</h1>";
         echo "<a href='router.php'> Volver </a>";
 
-        // imprime la tabla de peliculas
+        // imprime la tabla de peliculas.
         echo "<table>
                 <thead>
                     <tr>
