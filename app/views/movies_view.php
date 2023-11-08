@@ -1,14 +1,12 @@
 <?php
 class moviesView
 {
-
     public function showMovies($movies, $param)
     {
-        echo "<h1>Lista por género: $param</h2>";
+        echo "<h1>Lista por género: $param</h1>";
         echo "<a href='router.php'> Volver </a>";
 
-
-        // imprime la tabla de peliculas
+        // imprime la tabla de peliculas.
         echo "<table>
                 <thead>
                     <tr>
@@ -98,7 +96,6 @@ class moviesView
         <li><a href="router.php?studio=Fox">Fox</a></li>
     </ul>
 
-
 </body>
 </html>';
     }
@@ -116,12 +113,10 @@ class moviesView
         <body>';
         echo '<h1 class="errorSearch">No se encontró conincidencias para ese título</h1><br>';
         echo "<a href='router.php'> Volver </a>";
-        echo'
+        echo '
         </body>
         </html>';
     }
-
-
 }
 
 ?>
