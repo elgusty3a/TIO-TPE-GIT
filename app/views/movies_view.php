@@ -9,7 +9,7 @@ class moviesView
 
 
         // imprime la tabla de peliculas
-        echo "<table>
+        echo "<table class=tablita>
                 <thead>
                     <tr>
                         <th>Título</th>
