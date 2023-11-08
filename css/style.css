@@ -2,7 +2,6 @@ body{
   margin: 0;
   padding: 0;
   background-color: rgb(44, 38, 38);
-  display: flex;
 }
 
 h1{
@@ -17,13 +16,13 @@ ul{
 }
 
 ul li a{
+  text-decoration: none;
   color: rgb(165, 144, 25);
 }
 
 h1.errorSearch{
   color: beige;
-  background: rgb(245, 7, 7);
-  display: flex;
+  background: rgb(192, 18, 18);
 }
 
 form label{
@@ -37,4 +36,14 @@ form{
 }
 input{
   margin-bottom: 5px;
+}
+
+.tablita{
+  border:2px solid #333;
+  border-radius:5px;
+  color:red;
+}
+
+.tablita tbody{
+  border: 1px solid #999;
 }
