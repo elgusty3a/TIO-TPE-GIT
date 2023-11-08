@@ -7,10 +7,12 @@ body{
 h1{
   color: rgb(214, 187, 36);
   margin-left: 30px;
+  background-color: #333;
 }
 
 ul{
   margin-left: 50px;
+  text-decoration: none;
 }
 
 ul li a{
