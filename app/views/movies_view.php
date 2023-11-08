@@ -1,15 +1,14 @@
 <?php
 class moviesView
 {
-
     public function showMovies($movies, $param)
     {
-        echo "<h1>Lista por género: $param</h2>";
+        echo "<h1>Lista por género: $param</h1>";
         echo "<a href='router.php'> Volver </a>";
 
+       // imprime la tabla de peliculas.
 
-        // imprime la tabla de peliculas
-        echo "<table class=tablita>
+        echo "<table>
                 <thead>
                     <tr>
                         <th>Título</th>
@@ -64,17 +63,18 @@ class moviesView
     <title>Movies</title>
 </head>
 <body>
-
+<div class="contenedor">
 <h1>Buscar Peliculas</h1>
 <section>
     <form action="router.php?search" method="GET">
-    <label for="Nombre">Nombre: </label>
+    <label for="Nombre">Nombre </label><br>
     <input type="text" name="nombre" id="nombre" /><br />
     
-    <input type="submit" name="search"id="search" value="Buscar"/><br />
+    <input class="btn" type="submit" name="search"id="search" value="Buscar"/><br />
     </form>
 
 </section>
+</div>
 
     <h1>Peliculas por género</h1>
     
@@ -97,7 +97,6 @@ class moviesView
         <li><a href="router.php?studio=Fox">Fox</a></li>
     </ul>
 
-
 </body>
 </html>';
     }
@@ -115,12 +114,10 @@ class moviesView
         <body>';
         echo '<h1 class="errorSearch">No se encontró conincidencias para ese título</h1><br>';
         echo "<a href='router.php'> Volver </a>";
-        echo'
+        echo '
         </body>
         </html>';
     }
-
-
 }
 
 ?>
