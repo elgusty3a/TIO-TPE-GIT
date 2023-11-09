@@ -1,7 +1,7 @@
 body{
   margin: 0;
   padding: 0;
-  background-color: rgb(44, 38, 38);
+  background-color: rgb(69, 35, 35);
   display: flex;
 }
 
@@ -38,4 +38,5 @@ form{
 input{
   margin-bottom: 5px;
   border-radius: 5px;
+  color: rgb(176, 236, 236);
 }
