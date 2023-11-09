@@ -6,8 +6,9 @@ class moviesView
         echo "<h1>Lista por género: $param</h1>";
         echo "<a href='router.php'> Volver </a>";
 
-        // imprime la tabla de peliculas.
-        echo "<table class=tablita>
+       // imprime la tabla de peliculas.
+
+        echo "<table>
                 <thead>
                     <tr>
                         <th>Título</th>
